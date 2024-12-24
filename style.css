@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;  
+}
+
+nav{
+    background-color: rgb(37,9,37);
+    color: white;
+    height: 55px;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    font-family: 'Roboto',sans-serif;
+}
+
+
+nav ul{
+    list-style: none;
+}
+.gameContainer
+{
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+}
+.container{
+display: grid;
+grid-template-rows: repeat(3, 10vw) ;
+grid-template-columns: repeat(3, 10vw);
+font-family: 'Roboto',sans-serif;
+position: relative;
+padding: 33px;
+}
+.box{
+  border: 2px solid black;
+  font-size: 8vw;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-content: centers;
+}
+.box:hover
+{
+background-color: aqua;
+}
+.info{
+  font-size: 30px;
+}
+  .gameinfo
+  {
+    padding: 0 34px;
+  }
+  .gameinfo h1{
+    font-size: 2.5rem;
+  }
+.imgbox
+{
+  width: 0;
+  transition: width 1s ease-in-out;
+}
+
+.br-0
+{
+  border-right: 0 ;
+}
+
+.bl-0
+{
+  border-left: 0 ;
+}
+
+.bt-0
+{
+  border-top: 0 ;
+}
+.bb-0
+{
+  border-bottom: 0 ;
+}  
+
+#reset{
+margin: 0 25px;
+padding: 3px;
+background-color: rgb(234, 168, 181);
+border-radius: 10px;
+cursor: pointer;
+font-size: 27px;
+font-weight: bolder;
+}
+.line
+{
+  background-color: black;
+  height: 2px;
+  width: 30vw;
+  position: absolute;
+  margin: 33px;
+  background-color: #911d91;
+  transition: width 1s ease-in-out;
+}
+@media screen and (max-width:900px)
+{
+.gameContainer{
+  flex-wrap: wrap;
+}  
+.gameinfo
+{
+  margin-top: 34px;
+}
+
+}
